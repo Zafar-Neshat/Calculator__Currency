@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'all_style.css' %}">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <a href="/">Home</a>    
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </div>
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

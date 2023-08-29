@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% extends "master.html" %}
+{% load static %}
 
+{% block title %}
+  All Members
+{% endblock %}
+
+
+{% block content %}
 <h1>All Members</h1>
   
 <ul>
   {% for x in mymembers %}
-    <li>{{ x.firstname }} {{ x.lastname }} {{ x.Date }}</li>
+    <li class="li_member"><span><img class="profile_img" src="{% static 'images/image_1.jpg'%}" alt=""></span>{{ x.firstname }} {{ x.lastname }}<a href="details/{{ x.id }}">View</a> </li>
   {% endfor %}
 </ul>
 
-</body>
-</html>
+{% endblock %}

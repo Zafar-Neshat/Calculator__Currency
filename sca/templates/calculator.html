@@ -1,53 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
-    <link rel="shortcut icon" href="https://png.pngitem.com/pimgs/s/185-1850515_ios-application-mathe-lernen-realmax-scientific-calculator-hd.png" type="image/x-icon">
-</head>
-<head>
-    <!-- style  -->
-    <style>
+{% extends "master.html" %}
+{% load static %}
 
-        body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #011627;
-    color: #fdfffc;
-    text-align: center;
-    background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/13/sky-828648_960_720.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-h1{
-    font-size: 45px;
-}
-
-input{
-    width: 75px;
-    height: 50px;
-    font-size: 45px;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: white;
-    color: black;
-    border-style: none;
-
-}
-
-.btn:hover{
-    background-color:yellow;
-    cursor: pointer;
-}
-
-    </style>
-<!-- End Style -->
+{% block title %}
+Calculator
+{% endblock %}
 
 
-</head>
+{% block content %}
 <body>
         <h1>Calculator</h1>
     <form action="" name="clc">
@@ -71,6 +30,4 @@ input{
 
     </form>
 
-</body>
-</html>
-
+{% endblock %}
