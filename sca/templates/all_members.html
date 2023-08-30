@@ -7,12 +7,15 @@
 
 
 {% block content %}
+<section class="li_member">
 <h1>All Members</h1>
   
 <ul>
   {% for x in mymembers %}
-    <li class="li_member"><span><img class="profile_img" src="{% static 'images/image_1.jpg'%}" alt=""></span>{{ x.firstname }} {{ x.lastname }}<a href="details/{{ x.id }}">View</a> </li>
+    <li ><span><img class="profiles" src="{% static 'images/icon.png'%}" alt=""></span>
+      <a class="view_button" href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a> </li>
   {% endfor %}
 </ul>
+</section>
 
 {% endblock %}

@@ -8,10 +8,11 @@ Currency
 
 {% block content %}
 <h1>Currency Converter</h1>
-  
+
 <ul>
   {% for x in mymembers %}
-    <li class="li_member"><span><img class="profile_img" src="{% static 'images/image_1.jpg'%}" alt=""></span>{{ x.Currencyone }} {{ x.Currencytwo }} {{ x.Valueone }} {{ x.Valuetwo }} <a href="details/{{ x.id }}">View</a> </li>
+  <li class="li_member"><span><img class="profile_img" src="{% static 'images/image_1.jpg'%}" alt=""></span>{{
+    x.Currencyone }} {{ x.Currencytwo }} {{ x.Valueone }} {{ x.Valuetwo }} <a href="details/{{ x.id }}">View</a> </li>
   {% endfor %}
 </ul>
 

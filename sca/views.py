@@ -15,11 +15,9 @@ def all_members(request):
     }
     return HttpResponse(template.render(context,request))
 
-
-
     
 def currency(request):
-    mymembers = member_acc.objects.all().values()
+    mymembers = currency.objects.all().values()
 
     template = loader.get_template("currency.html")
 

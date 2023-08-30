@@ -7,12 +7,14 @@ Details
 
 
 {% block content %}
-<body>
 
+<section class="details">
     <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
   
     <p>Date: {{ mymember.Date }}</p>
     
+    <p><a href="/all_members">Back to Details</a></p>
+</section>
 
 
 {% endblock %}
