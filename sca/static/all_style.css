@@ -1,45 +1,46 @@
 /* Start Calculator */
 
-body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #011627;
-    color: #fdfffc;
-    text-align: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #011627;
+  color: #fdfffc;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-h1{
-    font-size: 45px;
+h1 {
+  font-size: 45px;
 }
 
-input{
-    width: 75px;
-    height: 50px;
-    font-size: 45px;
-    border-radius: 10px;
-    margin: 10px;
-    background-color: white;
-    color: black;
-    border-style: none;
+input {
+  width: 75px;
+  height: 50px;
+  font-size: 45px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  border-style: none;
 }
 
-.btn:hover{
-    background-color:crimson;
-    cursor: pointer;
+.btn:hover {
+  background-color: crimson;
+  cursor: pointer;
 }
+
 /* End Calculator */
 
 /* Start homepage */
 
-.homepage{
-    background-image: url(https://images.pexels.com/photos/5466793/pexels-photo-5466793.jpeg?cs=srgb&dl=pexels-olia-danilevich-5466793.jpg&fm=jpg);
+.homepage {
+  background-image: url(https://images.pexels.com/photos/5466793/pexels-photo-5466793.jpeg?cs=srgb&dl=pexels-olia-danilevich-5466793.jpg&fm=jpg);
 }
 
-.homepage::after{
+.homepage::after {
   content: "";
   position: absolute;
   top: 0;
@@ -49,114 +50,116 @@ input{
   z-index: -1;
   background: rgba(0, 0, 0, 0.6);
   box-shadow: inset 140px 120px 280px #000000,
-    inset -140px -120px 280px #000000 ;
+    inset -140px -120px 280px #000000;
 }
 
+
 .content {
-    display: flex;
-    max-width: 500px;
-    margin:auto;
-    margin-top: 120px;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-  }
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 120px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
 
 
 /* Calculator button */
 .SCA a {
-    font-size: 50px;
-    height: 200px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    border-radius: 25px 0;
-    background-color: #97979780;
-    color: #000;
-    text-decoration: none;
-    justify-content: center;
-    padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+  font-size: 50px;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px 0;
+  background-color: #97979780;
+  color: #000;
+  text-decoration: none;
+  justify-content: center;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.SCA a:hover{
-    background-color: #242424;
-    color: crimson;
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.SCA a:hover {
+  background-color: #242424;
+  color: crimson;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 
-/* End */
+/* End calculator*/
 
 
 /* currency button */
 
-.currency a{
-    font-size: 50px;
-    height: 200px;
-    width: 400px;
-    display: flex;
-    align-items: center;
-    border-radius: 0 25px;
-    background-color: #97979780;
-    color: #000;
-    text-decoration: none;
-    justify-content: center;
-    padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin-left: 200px;
+.currency a {
+  font-size: 50px;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 0 25px;
+  background-color: #97979780;
+  color: #000;
+  text-decoration: none;
+  justify-content: center;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-left: 200px;
 }
 
-.currency a:hover{
-    background-color: #242424;
-    color: crimson;
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+.currency a:hover {
+  background-color: #242424;
+  color: crimson;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* End */
+/* End currency */
 
 
 /* all member button */
-.button_homepage{
-    background-color: transparent;
+.button_homepage {
+  background-color: transparent;
 }
 
 .button_homepage a {
-    color: #979797;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+  color: #e6e5e5;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-
-
 
 .button_homepage a:hover {
-    background-color: #242424;
-    color: crimson;
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #242424;
+  color: crimson;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 
+/* End all member button */
 /* End Homepage */
+
+
 
 /* All Members */
 
 .li_member .profiles {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 2px solid crimson;
-    margin-left: -120px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid crimson;
+  margin-left: -120px;
 }
 
- 
-.li_member h1{
+
+.li_member h1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,12 +167,12 @@ input{
   color: #979797;
 }
 
-.li_member  ul{
- margin-left: 600px;
- list-style-type: none;
+.li_member ul {
+  margin-left: 600px;
+  list-style-type: none;
 }
 
-.li_member a{
+.li_member a {
   color: #979797;
   text-decoration: none;
   margin-left: 30px;
@@ -177,83 +180,87 @@ input{
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.li_member a:hover{
+.li_member a:hover {
   color: crimson;
   transform: scale(1.1);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.li_member li{
+.li_member li {
   display: flex;
 }
 
 /* End All Members */
 
-/* navbar */
+
+/* Navbar */
 .navbar nav {
-    background-color: #242424;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    height: 30px;
-    padding:15px;   
-    word-spacing: 30px;
-  }
-  
-  .navbar nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 25px;
-    padding: 3px;
+  background-color: #242424;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  height: 30px;
+  padding: 15px;
+  word-spacing: 30px;
+}
 
-  }
-  
-  .navbar nav a:hover {
-    color: crimson;
-    padding: 2px;
-    border-radius: 5px;
-    transition:.5s ease all;
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 3px;
 
-  }
+}
 
-  .img_nav{
-    width: 40px;
-    float: left;
-    margin-left: 5px;
-    border-radius: 5px; 
-  }
+.navbar nav a:hover {
+  color: crimson;
+  padding: 2px;
+  border-radius: 5px;
+  transition: .5s ease all;
+
+}
+
+.img_nav {
+  width: 40px;
+  float: left;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+
+/*End Navbar*/
 
 
+/* Details */
+.details h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
 
-/*    */
-.details h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-  }
-  
-  .details p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-  }
-  
-  .details a{
-    color: #979797;
-    text-decoration: none;
-    border: 1px solid #242424;
-    display: flex;
-    justify-content: center;
-    width: 200px;
-    padding: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .details a:hover{
-    background-color: #242424;
-    color: crimson;
-    transform: scale(1.1);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
+.details p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.details a {
+  color: #979797;
+  text-decoration: none;
+  border: 1px solid #242424;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.details a:hover {
+  background-color: #242424;
+  color: crimson;
+  transform: scale(1.1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* End Datalist */

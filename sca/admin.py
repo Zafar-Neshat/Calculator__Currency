@@ -13,7 +13,6 @@ class MemberAdmin(admin.ModelAdmin):
 admin.site.register(member_acc, MemberAdmin)
 
 
-
 class MemberAdmin(admin.ModelAdmin):
   list_display = ("Currencyone", "Currencytwo", "Valueone", "Valuetwo")
   

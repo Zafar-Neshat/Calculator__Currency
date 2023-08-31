@@ -6,7 +6,7 @@ class member_acc(models.Model):
   Date = models.DateField(null=True)
 
   def __str__(self):
-    return f"{self.firstname} {self.lastname}"
+    return "{self.firstname} {self.lastname}"
 
 
 
@@ -17,4 +17,4 @@ class currency(models.Model):
   Valuetwo = models.CharField(max_length=255)
   
   def __str__(self):
-    return f"{self.Currencyone} {self.Currencytwo} {self.Valueone} {self.Valuetwo}"
+    return "{self.Currencyone} {self.Currencytwo} {self.Valueone} {self.Valuetwo}"

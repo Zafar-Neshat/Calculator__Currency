@@ -7,15 +7,17 @@ Currency
 
 
 {% block content %}
+<section class="cu"></section>
 <h1>Currency Converter</h1>
 
 <ul>
   {% for x in mymembers %}
-  <li class="li_member"><span><img class="profile_img" src="{% static 'images/image_1.jpg'%}" alt=""></span>{{
-    x.Currencyone }} {{ x.Currencytwo }} {{ x.Valueone }} {{ x.Valuetwo }} <a href="details/{{ x.id }}">View</a> </li>
+  <li><a class="view_button" href="details/{{ x.id }}">{{x.Currencyone }} {{ x.Currencytwo }} {{ x.Valueone }} {{
+      x.Valuetwo }}</a>
+  </li>
+
   {% endfor %}
 </ul>
-
 
 
 {% endblock %}

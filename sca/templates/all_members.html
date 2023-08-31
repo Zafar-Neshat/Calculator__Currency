@@ -2,20 +2,21 @@
 {% load static %}
 
 {% block title %}
-  All Members
+All Members
 {% endblock %}
 
 
 {% block content %}
 <section class="li_member">
-<h1>All Members</h1>
-  
-<ul>
-  {% for x in mymembers %}
-    <li ><span><img class="profiles" src="{% static 'images/icon.png'%}" alt=""></span>
-      <a class="view_button" href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a> </li>
-  {% endfor %}
-</ul>
+  <h1>All Members</h1>
+
+  <ul>
+    {% for x in mymembers %}
+    <li><span><img class="profiles" src="{% static 'images/icon.png'%}" alt=""></span>
+      <a class="view_button" href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 
 {% endblock %}
